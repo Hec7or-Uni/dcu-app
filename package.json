@@ -1,0 +1,49 @@
+{
+  "name": "next-template",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "16.x",
+    "npm": "8.15.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test:e2e": "npx cypress run",
+    "lint": "eslint --cache --fix",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@next/font": "13.1.6",
+    "@prisma/client": "^4.9.0",
+    "core-js": "^3.27.2",
+    "crypto": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "mobx": "^6.7.0",
+    "next": "13.1.6",
+    "next-auth": "^4.19.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "redoc": "^2.0.0",
+    "sitemap": "^7.1.1",
+    "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "@cypress/code-coverage": "^3.10.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.33.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-next": "13.1.6",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "postcss": "^8.4.21",
+    "prisma": "^4.9.0",
+    "tailwindcss": "^3.2.4"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
